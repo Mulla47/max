@@ -1,19 +1,19 @@
-name: '"Configure AWS Credentials" Action For GitHub Actions'
+- name: '"Configure AWS Credentials" Action For GitHub Actions'
 description: 'Configure AWS credential and region environment variables for use with the AWS CLI and AWS SDKs'
 branding:
-  icon: 'cloud'
+ @@icon: 'cloud'
   color: 'orange'
 inputs:
-  aws-access-key-id:
+  aws-access-key-id:@@
     description: >-
       AWS Access Key ID. This input is required if running in the GitHub hosted environment.
-      It is optional if running in a self-hosted environment that already has AWS credentials,
+    -  It is optional if running in a self-hosted environment that already has AWS credentials,
       for example on an EC2 instance.
   +   required:false
-  aws-secret-access-key:
+  aws-secret-access-key: @@
      description: >- 
       AWS Secret Access Key. This input is required if running in the GitHub hosted environment.
-      It is optional if running in a self-hosted environment that already has AWS credentials,
+      It is optional if running in a self-hosted environment that already has AWS credentials, @@
       for example on an EC2 instance.
     required: false
   aws-session-token:
